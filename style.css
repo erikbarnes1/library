@@ -40,7 +40,7 @@ h1 {
   height: 12rem;
   width: 8rem;
   background-color: rgb(240, 240, 240);
-  margin: 1rem;
+  margin: 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
   display: flex;
@@ -54,7 +54,7 @@ h1 {
   width: 8rem;
   background-color: rgb(240, 240, 240);
   border: 2px solid rgb(117, 117, 117);
-  margin: 1rem;
+  margin: 1.5rem;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;

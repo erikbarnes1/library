@@ -1,16 +1,28 @@
 let Library = [];
 
-function Movie(name) {
-  this.name = name;
+class Movie {
+  constructor(title, year) {
+    this.title = title;
+    this.year = year;
+  }
 }
 
+let newMovie;
+const form = document.querySelector("#form");
+
 function addMovieToLibrary() {
-  //const newMovie = new Movie(newMovie.value);
-  //Library.push(newMovie);
-  displayMovies();
+  newMovie = new Movie(title, year);
+  Library.push(newMovie);
+
   div_hide();
   console.log(Library);
 }
+
+newMovie = new Movie(title, year);
+
+const title = document.querySelector("#title").value;
+
+const year = document.querySelector("#year").value;
 
 function displayMovies() {
   const newCard = document.createElement("div");
@@ -22,14 +34,8 @@ function displayMovies() {
   Library.push(title);
 }
 
-//Library.forEach();
-
 let addMovie = document.getElementById("submit");
 addMovie.addEventListener("click", addMovieToLibrary);
-
-//const newCard = document.createElement("div");
-
-//card.innerHTML += `<div class="card">Item ${library.children.length + 1}</div>`;
 
 //Function To Display Popup
 function div_show() {
