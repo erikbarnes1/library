@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Oleo+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Watch_Box</title>
+  </head>
+
+  <body>
+    <div class="topContainer">
+      <div class="watchList">
+        <h1>Watch_Box</h1>
+      </div>
+      <div class="loginTop">
+        <h2>Login</h2>
+      </div>
+    </div>
+
+    <div id="abc">
+      <!-- Popup Div Starts Here -->
+      <div id="popupContact">
+        <!-- Contact Us Form -->
+        <form action="#" id="form" method="post" name="form">
+          <img id="close" src="images/3.png" onclick="div_hide()" />
+          <input id="title" name="title" placeholder="Title" type="text" />
+          <!--<textarea id="msg" name="message" placeholder="Message"></textarea> -->
+          <a id="submit">Add Movie</a>
+        </form>
+      </div>
+      <!-- Popup Div Ends Here -->
+    </div>
+    <div class="libDiv">
+      <div class="library">
+        <button id="addCard" onclick="div_show()">+</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
